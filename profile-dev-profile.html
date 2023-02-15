@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - dev-profile</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="profile.html">profile</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="profile-dev-profile.html">dev-profile</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/profile/dev-profile/header.gif"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/header.gif"
+                
+                data-filename="header.gif"
+          
+              >
+              <a href="media/original/profile/dev-profile/header.gif">
+                <img src="media/thumbs/profile/dev-profile/header.gif"
+                     width="120"
+                     height="120"
+                     alt="header.gif" />
+              </a>
+                <img class="video-overlay" src="public/play.png" />
+            </li>      
+            <li data-src="media/large/profile/dev-profile/header.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/header.png"
+                
+                data-filename="header.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/header.png">
+                <img src="media/thumbs/profile/dev-profile/header.png"
+                     width="120"
+                     height="120"
+                     alt="header.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/profile/dev-profile/profile.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/profile.png"
+                
+                data-filename="profile.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/profile.png">
+                <img src="media/thumbs/profile/dev-profile/profile.png"
+                     width="120"
+                     height="120"
+                     alt="profile.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/profile/dev-profile/profile_black.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/profile_black.png"
+                
+                data-filename="profile_black.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/profile_black.png">
+                <img src="media/thumbs/profile/dev-profile/profile_black.png"
+                     width="120"
+                     height="120"
+                     alt="profile_black.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/profile/dev-profile/profile_face.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/profile_face.png"
+                
+                data-filename="profile_face.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/profile_face.png">
+                <img src="media/thumbs/profile/dev-profile/profile_face.png"
+                     width="120"
+                     height="120"
+                     alt="profile_face.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/profile/dev-profile/profile_face_small.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/profile_face_small.png"
+                
+                data-filename="profile_face_small.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/profile_face_small.png">
+                <img src="media/thumbs/profile/dev-profile/profile_face_small.png"
+                     width="120"
+                     height="120"
+                     alt="profile_face_small.png" />
+              </a>
+            </li>      
+            <li data-src="media/large/profile/dev-profile/profile_non.png"
+                data-sub-html=""
+                data-download-url="media/original/profile/dev-profile/profile_non.png"
+                
+                data-filename="profile_non.png"
+          
+              >
+              <a href="media/original/profile/dev-profile/profile_non.png">
+                <img src="media/thumbs/profile/dev-profile/profile_non.png"
+                     width="120"
+                     height="120"
+                     alt="profile_non.png" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©️ Ambler</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
